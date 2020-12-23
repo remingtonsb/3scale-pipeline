@@ -12,7 +12,7 @@ spec:
       - name: toolbox
         image: quay.io/redhat/3scale-toolbox:master
         imagePullPolicy: Always
-      args: [ "3scale", "import", "openapi", "-d", "rmendes-instance-a", "/artifacts/swagger.json", "-k", "--override-private-base-url=https://echo-api.3scale.net", "-t", "beer-catalog" ]
+      args: [ "3scale", "import", "openapi", "-d", "rmendes-instance-a", "/artifacts/swagger.json", "--override-private-base-url=https://echo-api.3scale.net", "-t", "beer-catalog" ]
         env:
         - name: HOME
           value: /config
